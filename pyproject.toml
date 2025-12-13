@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pynq"
+version = "1.0.0"
+description = "A lightweight LINQ-style query toolkit for Python sequences."
+authors = [
+    { name = "Boughpohpue", email = "joseph.marianson@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+
+keywords = ["linq", "query", "sequence", "functional", "pynq", "utilities"]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://github.com/Boughpohpue/pynq"
+Source = "https://github.com/Boughpohpue/pynq"
+Documentation = "https://github.com/Boughpohpue/pynq/blob/main/README.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
