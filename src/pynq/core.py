@@ -12,7 +12,6 @@ K = TypeVar('K')
 
 
 # BASIC
-
 def has_any(seq: Iterable[T]) -> bool:
     try:
         test = seq[0]
